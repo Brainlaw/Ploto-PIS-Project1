@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A00BCD4">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:text="@string/enter_full_name_and_password"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/full_name_input"
+        style="@style/big_input"
+        android:layout_marginTop="20dp"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/password_input"
+        style="@style/big_input"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/full_name_input" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/big_btn"
+        android:text="@string/register"
+        app:layout_constraintTop_toBottomOf="@id/password_input" />
+
+</android.support.constraint.ConstraintLayout>
